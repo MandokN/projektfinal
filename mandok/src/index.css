@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap');
+
+html {
+    font-family: 'Magra', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+#root {
+    display: grid;
+    grid-template-rows: 8rem 1fr;
+    min-height: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5ca6ff;
+    padding: 1rem 4rem;
+}
+
+.nav_logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav_logo > h1 {
+    margin: 0;
+}
+
+.nav_choose {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav_choose > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 700;
+    transition: color 0.25s ease-in-out;
+}
+
+.nav_choose > a:hover {
+    color: rgb(128, 128, 128);
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e8f0;
+}
+
+.main_block {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+}
+
+.main_block--how > h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.main_block--count {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .main_block--count {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
